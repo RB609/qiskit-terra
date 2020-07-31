@@ -218,3 +218,15 @@ gate c4x a,b,c,d,e
     c3x a,b,c,d;
     c3sqrtx a,b,c,e;
 }
+
+// iSWAP Gate 
+gate iswap a,b
+{
+  s a;
+  s b;
+  h a;
+  cx a,b;
+  cx b,a;
+  h b;
+ }
+ 
